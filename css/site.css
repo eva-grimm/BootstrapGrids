@@ -1,0 +1,61 @@
+/* sticky footer */
+
+/* edits html and body */
+html,
+body {
+    /* sets height of these elements to cover the full height of the screen */
+    height: 100%;
+}
+
+body {
+    /* flexes display */
+    display: flex;
+
+    /* sets flex direction from left-right to up-down */
+    flex-direction: column;
+}
+
+/* because nothing else is using flex-grow, this sets main to take up as much 
+space as possible */
+main {
+    flex-grow: 1;
+}
+
+/* makes sure the footer doesn't get shrunk when the body gets larger */
+footer {
+    flex-shrink: 0;
+}
+
+.bg-image {
+    /* grabs background image */
+    background-image: url(/img/GridBG.png);
+
+    /* fills page with bg instead of zooming on it */
+    background-size: cover;
+
+    /* centers the background when resizing */
+    background-position: center;
+
+    /* ensures the background doesn't repeat on larger monitors */
+    background-repeat: no-repeat;
+}
+
+/* applies exclusively to the <main> in the body using .bg-image */
+.bg-image main {
+    /* adds a 'sheet' of filter between the background and the content 
+    in the main */
+    backdrop-filter: brightness(0.6);
+}
+
+/* pulls Londrina Shadow and, failing that, defaults to sans-serif */
+.title-text {
+    font-family: 'Londrina Shadow', sans-serif;
+    text-transform: uppercase;
+    color: rgb(195, 255, 0);
+    font-weight: 400;
+}
+
+/* sets height to a viewport height of 85 */
+.min-height {
+    min-height: 85vh;
+}
