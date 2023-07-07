@@ -70,7 +70,59 @@
 
     <!-- page content -->
     <main class="container">
-        
+        <!-- buttons to change grid3 to grid3b -->
+        <ul class="nav nav-pills m-1">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="grid3.html">Grid Three</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="grid3b.html">Grid Three B</a>
+            </li>
+        </ul>
+
+        <div class="row h-75 text-light">
+            <!-- left column -->
+            <div class="col col-7">
+                <article class="bg-secondary h-100 p-2">
+                    Col Left
+                </article>
+            </div>
+
+            <!-- right column -->
+            <!-- code from Jacob -->
+            <div class="col col-5">
+                <div class="row row-cols-1 h-100">
+                    <div class="col mb-1">
+                        <article class="h-100 bg-secondary p-2">
+                            Col Right
+                        </article>
+                    </div>
+                    <div class="col mt-1">
+                        <article class="h-100 bg-dark p-2">
+                            Col Right Bottom
+                        </article>
+                        <article>
+                            <button class="btn btn-secondary">Read More</button>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- original code -->
+                <!-- <div class="row pb-2 h-50">
+                    <article class="bg-secondary p-2">
+                        Col Right
+                    </article>
+                </div>
+                <div class="row h-50 bg-dark">
+                    <article class="h-75 p-2">
+                        Col Right Bottom
+                    </article>
+                    <article class="">
+                        <button class="d-flex align-self-end btn btn-secondary">Read More</button>
+                    </article>
+                </div> -->
+            </div>
+        </div>
     </main>
 
     <!-- footer that appears on each page -->

@@ -59,3 +59,7 @@ footer {
 .min-height {
     min-height: 85vh;
 }
+
+.text-justify {
+    text-align: justify;
+}
